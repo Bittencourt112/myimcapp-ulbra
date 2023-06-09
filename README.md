@@ -1,2 +1,2 @@
-# myimcapp-ulbra
+# AppIMC
  Atividade da Ulbra
