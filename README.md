@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-  .div {float: left;}
+.div{float: left;}
 </style>
 </head>
 <body>
