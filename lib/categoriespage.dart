@@ -24,7 +24,7 @@ class CategoriesPage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => HomePage()
+                builder: (context) => const HomePage()
               )
             );
           },
@@ -46,10 +46,10 @@ class CategoriesPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
-            Align(
+            const Align(
               alignment: Alignment.center,
               child: Divider(
                 height: 1.0,
@@ -59,10 +59,10 @@ class CategoriesPage extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
-            Align(
+            const Align(
               alignment: Alignment.center,
               child: Text(
                 "BMI Categories",
@@ -73,14 +73,14 @@ class CategoriesPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 30.0),
+              padding: const EdgeInsets.symmetric(horizontal: 30.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
+                children: const <Widget>[
                   Text(
                     "Less than 18.5",
                     style: TextStyle(

@@ -79,7 +79,7 @@ class HomePageState extends State<HomePage> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                    builder: (context) => CategoriesPage()
+                    builder: (context) => const CategoriesPage()
                     )
                   );
                 },
@@ -106,7 +106,7 @@ class HomePageState extends State<HomePage> {
                       padding: const EdgeInsets.all(10.0),
                       decoration: ShapeDecoration(
                         color: currentMaleIconColor,
-                        shape: CircleBorder()
+                        shape: const CircleBorder()
                       ),
                       child: IconButton(
                         onPressed: () {
@@ -146,7 +146,7 @@ class HomePageState extends State<HomePage> {
                       padding: const EdgeInsets.all(10.0),
                       decoration: ShapeDecoration(
                         color: currentFemaleIconColor,
-                        shape: CircleBorder()
+                        shape: const CircleBorder()
                       ),
                       child: IconButton(
                         onPressed: () {
@@ -237,7 +237,7 @@ class HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5.0,
               ),
               Form(
@@ -248,13 +248,13 @@ class HomePageState extends State<HomePage> {
                     Row(
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 45.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 45.0),
                           child: SizedBox(
                             height: 40.0,
                             width: 100.0,
                             child: TextFormField(
                               controller: weightController,
-                              keyboardType: TextInputType.numberWithOptions(
+                              keyboardType: const TextInputType.numberWithOptions(
                                 decimal: true
                               ),
                               validator: (value) {
@@ -267,13 +267,13 @@ class HomePageState extends State<HomePage> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 25.0),
+                          padding: const EdgeInsets.symmetric(horizontal: 25.0),
                           child: SizedBox(
                             height: 40.0,
                             width: 100.0,
                             child: TextFormField(
                               controller: heightController,
-                              keyboardType: TextInputType.numberWithOptions(
+                              keyboardType: const TextInputType.numberWithOptions(
                                 decimal: true
                               ),
                               validator: (value) {
@@ -287,11 +287,11 @@ class HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 50.0,
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 50.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 50.0),
                       child: Container(
                         decoration: BoxDecoration(
                           color: currentBmiButtonColor01,
@@ -333,7 +333,7 @@ class HomePageState extends State<HomePage> {
                             },
                             child: Text(
                               "$currentBmiButtonMessage",
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontWeight: FontWeight.bold
                               ),
                             ),
@@ -347,14 +347,14 @@ class HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                       height: 20.0,
                     ),
               Container(
                 alignment: Alignment.center,
                 child: Column(
                   children: <Widget>[
-                    Text(
+                    const Text(
                       "Your BMI",
                       style: TextStyle(
                         fontSize: 14.0,
@@ -362,10 +362,10 @@ class HomePageState extends State<HomePage> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(10.0),
+                      padding: const EdgeInsets.all(10.0),
                       child: Text(
                         "$bmiResult",
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.bold,
                           color: Colors.black
@@ -374,7 +374,7 @@ class HomePageState extends State<HomePage> {
                     ),
                     Text(
                       "$bmiSituation",
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 14.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.black
