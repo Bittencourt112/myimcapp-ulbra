@@ -64,7 +64,8 @@ class HomePageState extends State<HomePage> {
           AppBar(
             elevation: 0,
             backgroundColor: Colors.transparent,
-            titleSpacing: 20,
+            titleSpacing: -35,
+            leading: Container(),
             title: const Text(
               "BMI Calculator",
               style: TextStyle(
